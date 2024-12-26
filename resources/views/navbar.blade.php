@@ -13,9 +13,6 @@
 @endauth
 
 @guest
-    @if (Request::is('login'))
-        <li><a href="{{ route('register') }}">Register</a></li>
-    @elseif (Request::is('register'))
-        <li><a href="{{ route('login') }}">Login</a></li>
-    @endif
+    <li><a href="{{ route('register') }}">Register</a></li>
+    <li><a href="{{ route('login') }}">Login</a></li>
 @endguest
