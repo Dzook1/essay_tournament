@@ -48,4 +48,3 @@ Route::middleware(['auth', 'admin'])->group(function () {
         return view('adminDashboard');
     })->name('adminDashboard');
 });
-
